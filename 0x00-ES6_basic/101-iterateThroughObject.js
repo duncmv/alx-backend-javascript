@@ -1,6 +1,6 @@
 export default function iterateThroughObject(reportWithIterator) {
-  let text = "";
-  for (let index in reportWithIterator) {
+  let text = '';
+  for (const index in reportWithIterator) {
     const employee = reportWithIterator[index];
     text += employee;
 

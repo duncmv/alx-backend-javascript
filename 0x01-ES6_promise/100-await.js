@@ -6,6 +6,6 @@ export default async function asyncUploadUser() {
     const user = await createUser();
     return { photo, user };
   } catch (error) {
-    return { photo: null, user: null};
+    return { photo: null, user: null };
   }
 }

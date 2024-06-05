@@ -1,4 +1,4 @@
-export default getStudentIdsSum = (list) => {
+export default function getStudentIdsSum(list) {
   if (!Array.isArray(list)) {
     return 0;
   }

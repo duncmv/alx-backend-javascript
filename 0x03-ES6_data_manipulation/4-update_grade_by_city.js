@@ -1,10 +1,11 @@
-export default updateStudentGradeByCity = (students, city, newGrades) => {
+export default function updateStudentGradeByCity(students, city, newGrades) {
   if (!Array.isArray(students)) {
     return [];
   }
-  
-  newList = students.filter((student) => student.location === city).map((student) => {
-    for (let i = 0; i < newGrades.length; i++) {
+
+  const newList = students.filter((student) => student.location === city).map((student) => {
+    let i = 0;
+    for (i = 0; i < newGrades.length; i++) {
       if (student.id === newGrades[i].studentId) {
         student.grade = newGrades[i].grade;
       }

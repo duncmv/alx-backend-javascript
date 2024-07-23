@@ -43,6 +43,6 @@ const app = http.createServer((req, res) => {
       res.end(error.message);
     });
   }
-});
+}).listen(1245);
 
-app.listen(1245);
+module.exports = app;

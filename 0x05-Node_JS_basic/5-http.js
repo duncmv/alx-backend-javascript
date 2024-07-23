@@ -36,7 +36,7 @@ const app = http.createServer((req, res) => {
     res.end('Hello Holberton School!');
   }
   if (query === '/students') {
-    res.write('This is the list of our students:\n');
+    res.write('This is the list of our students\n');
     countStudents(process.argv[2]).then((result) => {
       res.end(result);
     }).catch((error) => {

@@ -1,0 +1,14 @@
+{
+  "name": "0x06-unittests_in_js",
+  "version": "1.0.0",
+  "description": "Using Mocha to run tests in Js",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^10.7.0"
+  }
+}

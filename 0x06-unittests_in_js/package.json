@@ -4,7 +4,7 @@
   "description": "Using Mocha to run tests in Js",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha.js"
+    "test": "./node_modules/mocha/bin/mocha"
   },
   "author": "",
   "license": "ISC",

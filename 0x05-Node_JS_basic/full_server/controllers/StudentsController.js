@@ -2,7 +2,7 @@ import readDatabase from '../utils.js';
 
 class StudentsController {
     static getAllStudents(request, response) {
-        readDatabase('./database.csv').then((data) => {
+        readDatabase(process.argv[2]).then((data) => {
             data = JSON.parse(data);
             response.end(`This is the list of our students
 Number of students in CS: ${data['CS'].length}. List: ${data['CS'].join(', ')}
@@ -15,7 +15,7 @@ Number of students in SWE: ${data['SWE'].length}. List: ${data['SWE'].join(', ')
     static getAllStudentsByMajor(request, response) {
         const { major } = request.params;
         if (major === 'SWE' || major === 'CS') {
-            readDatabase('./database.csv').then((data) => {
+            readDatabase(process.argv[2]).then((data) => {
                 data = JSON.parse(data);
                 response.end(`List: ${data[major].join(', ')}`);
             }).catch((err) => {

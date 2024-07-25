@@ -22,7 +22,7 @@ Number of students in SWE: ${data['SWE'].length}. List: ${data['SWE'].join(', ')
                 response.status(500).send(err.message);
             });
         } else {
-            response.status(500).send('Major must be CS or SWE');
+            response.status(500).send('Major parameter must be CS or SWE');
         }
     }
 }
